@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.0.0/nouislider.css" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<title>Jukebox Mockup</title>
+</head>
+<body>
+	<div id="jukebox">
+	<div class="info">
+			<h3 class="name">SoundCloud Jukebox</h3>
+			<span id="current"></span>
+			<!-- <div class="track"><span class="artist"></span> &mdash; <span class="song"></span></div> -->
+		</div>
+		<div class="controls">
+			<i class="back fa fa-backward fa-2x"></i>
+			<i class="pause fa fa-pause fa-2x"></i>
+			<i class="play fa fa-play fa-2x"></i>
+			<i class="stop fa fa-stop fa-2x"></i>
+			<i class="next fa fa-forward fa-2x"></i>
+			<i class="random fa fa-random fa-2x"></i>
+			<div class="volume"></div>
+			<div id="songList">
+				<ol id="list"></ol>
+			</div>
+		</div>
+	</div>
+<ol id="results"></ol>
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/10.0.0/nouislider.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
